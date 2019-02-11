@@ -13,19 +13,19 @@ import javafx.stage.StageStyle;
 public class MainController {
 
     @FXML
-    private MenuItem todoListMenuItem;
+    private MenuItem clickMeMenuItem;
 
     @FXML
-    void todoListMenuItem_Click(ActionEvent event) throws Exception {
-        System.out.println("Click Me");
+    void clickMeMenuItem_Click(ActionEvent event) throws Exception {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/TodoList.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(
+                getClass().getResource("/fxml/ClickMe.fxml"));
             Parent root = (Parent) fxmlLoader.load();
 
             Stage stage = new Stage();
             stage.setResizable(false);
             stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setTitle("Todo List");
+            stage.setTitle("Click Me");
             stage.setScene(new Scene(root));
             stage.show();
         } catch(Exception e) {
