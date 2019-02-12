@@ -1,0 +1,26 @@
+.button {
+    -fx-background-color: white;
+    -fx-font-size: 20;
+}
+
+.number {
+    -fx-font-weight: bold;
+}
+
+.ce {
+    -fx-background-color: white;
+    -fx-font-size: 18;
+}
+
+.button:hover {
+    -fx-background-color: lightgrey;
+}
+
+.operator:hover {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
+
+.ce:hover {
+    -fx-background-color: salmon;
+}

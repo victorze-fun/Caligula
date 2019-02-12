@@ -13,7 +13,31 @@ import javafx.stage.StageStyle;
 public class MainController {
 
     @FXML
+    private MenuItem calculatorMenuItem;
+
+    @FXML
     private MenuItem clickMeMenuItem;
+
+    @FXML
+    void calculatorMenuItem_Click(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(
+                getClass().getResource("/fxml/Calculator.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add("/styles/Calculator.css");
+
+            Stage stage = new Stage();
+            stage.setResizable(false);
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setTitle("Calculadora");
+            stage.setScene(scene);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     void clickMeMenuItem_Click(ActionEvent event) throws Exception {

@@ -11,14 +11,14 @@
    <children>
       <MenuBar>
         <menus>
-          <Menu mnemonicParsing="false" text="Apps">
+          <Menu mnemonicParsing="false" text="Aplicaciones">
             <items>
+                  <MenuItem fx:id="calculatorMenuItem" mnemonicParsing="false" onAction="#calculatorMenuItem_Click" text="Calculator" />
                   <MenuItem fx:id="clickMeMenuItem" mnemonicParsing="false" onAction="#clickMeMenuItem_Click" text="Click Me" />
-                  <MenuItem mnemonicParsing="false" text="Calculator" />
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="Ayuda">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
