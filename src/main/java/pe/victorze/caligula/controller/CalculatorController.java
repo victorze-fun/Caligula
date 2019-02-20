@@ -197,9 +197,6 @@ public class CalculatorController {
     }
 
     @FXML void initialize() {
-        //System.out.println(screenLabel.getText());
-        //number1 = 0;
-        //number2 = 0;
         reset();
     }
 
